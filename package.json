@@ -1,0 +1,20 @@
+{
+  "name": "px-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "node-fetch": "^2.0.0",
+    "px": "^0.1.2",
+    "serve-favicon": "~2.4.2",
+    "underscore": "^1.8.3"
+  }
+}
