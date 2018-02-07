@@ -27,19 +27,22 @@
       <h4>data.<%= d %></h4> 
       <p><%= JSON.stringify(data[d]) %></p>
     <% } %>
-   
-      <h2>getData() - accepts an array of indices from each of the above arrays</h2>
-      <p>eg getData([2,0,0,0,1,0]), which is New Private Cars (Number), Alfa Romeo, Jan '16</p>
-      <p><%= getData([2,0,0,0,1,0]) %></p>
 
-    <h2>column</h2>
-    <p><%= column(['*',0,0,0,0,0]) %></p>
+    <h1>Below this are specific to tem13 as I'm assuming 6 variables are present. These functions need a test on the passed array.</h1>
 
-    <h2>columnByName</h2>
-    <p><%= JSON.stringify(column2('Car Make', {"Licensing Authority":'Kilkenny', "Statistic":"Second Hand Private Cars (Number)"})) %></p>
 
-    <h2>columnByName</h2>
-    <p><%= JSON.stringify(column2(3)) %></p>
+    <h2>getData() - accepts an array of indices from each of the above arrays</h2>
+    <p>eg getData([2,0,0,0,1,0]), which is New Private Cars (Number), Alfa Romeo, Jan '16</p>
+    <p><%= getData([2,0,0,0,1,0]) %></p>
+
+  <h2>column</h2>
+  <p><%= column(['*',0,0,0,0,0]) %></p>
+
+  <h2>columnByName</h2>
+  <p><%= JSON.stringify(column2('Car Make', {"Licensing Authority":'Kilkenny', "Statistic":"Second Hand Private Cars (Number)"})) %></p>
+
+  <h2>columnByName</h2>
+  <p><%= JSON.stringify(column2(3)) %></p>
 
 
 <h2>valCounts</h2>
@@ -49,5 +52,6 @@
 
 <h4>Metadata</h4>
  <p><%= JSON.stringify(metadata) %></p> 
+
   </body>
 </html>
